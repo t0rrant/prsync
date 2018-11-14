@@ -70,7 +70,7 @@ do
         sleep ${sleep_t}
         # update pids to running pids only
         for pid in ${pids[@]}; do
-            ps -q ${pid} -o cmd=
+            ps -q ${pid} -o cmd= &>/dev/null
             if [[ ! $? -eq 0 ]]; then
                 # it's no longer running, remove pid from the array
                 unset pids[${pid}]
