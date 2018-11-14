@@ -78,7 +78,7 @@ do
         done
     done
     # Run rsync in background for the current folder - copy permissions, hardlinks, acls and extended attributes
-    rsync -aAXH "${dir}" "${target}/${dir}" &> /dev/null &
+    rsync -aAXH "${dir}" "${target}/" &> /dev/null &
     # save the pid
     pids[$!]=$!
     echo "Running rsync for $!"
