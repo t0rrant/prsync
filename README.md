@@ -20,3 +20,10 @@ statefulness are aAHX which will keep user, group, mode,
 mtimes, acl, extended attributes symlinks and hardlinks.
 
 feel free to contribute to the tool
+
+**NOTES**
+This is designed only for the push use case, not pull, this 
+will copy from a local machine to a remote, as it finds directories
+through the *find* command
+
+no extra args passing for *rsync* are implemented
