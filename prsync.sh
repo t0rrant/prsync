@@ -8,7 +8,7 @@
 #  prsync uses one rsync thread for each toplevel directory
 #  excluding the parent directory '.'
 #
-#  you can pass more directories via the '-e' option, the
+#  you can pass more directories to exclude via the '-e' option, the
 #  directory names should be their fullnames, no regular
 #  expressions, and should be separated by commas.
 #
